@@ -1,6 +1,4 @@
-import React from "react";
-
-export function Button(): JSX.Element {
+export function Button() {
   return (
     <section className="controls">
       <p className="info">0 gentlemen pointing at you</p>

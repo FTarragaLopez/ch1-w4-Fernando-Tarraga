@@ -1,4 +1,4 @@
-export type typeGentlemen = {
+export type GentlemanStructure = {
   id: number;
   name: string;
   status: string;
@@ -7,4 +7,4 @@ export type typeGentlemen = {
   picture: string;
   alternativeText: string;
   selected: boolean;
-};
+}[];
