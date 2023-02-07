@@ -1,15 +1,20 @@
-import { Button } from "../button/button";
-
-import { Info } from "../info/info";
+import React from "react";
+import { Button } from "../Button/Button";
+import { Info } from "../Info/Info";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <header className="main-header">
-        <h1 className="main-title">The pointing gentlemen</h1>
-        <Button />
-      </header>
-      <Info></Info>
+      <body>
+        <div className="container">
+          <header className="main-header">
+            <h1 className="main-title">The pointing gentlemen</h1>
+          </header>
+          <Button></Button>
+          <Info></Info>
+        </div>
+      </body>
     </>
   );
 }

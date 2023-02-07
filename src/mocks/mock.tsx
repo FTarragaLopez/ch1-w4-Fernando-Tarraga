@@ -1,10 +1,8 @@
-import { VIEJO } from "../models/viejo";
-
-export const MOCK_CASPOSOS: Casposo[] = [
+export const MOCK_GENTLEMEN = [
   {
     id: 1,
     name: "Bertin Osborne",
-    status: true,
+    status: "Alive",
     profession: "Youtuber",
     twitter: "@osbourne",
     picture: "bertin.jpg",
@@ -13,7 +11,7 @@ export const MOCK_CASPOSOS: Casposo[] = [
   },
   {
     name: "The Farytale",
-    status: false,
+    status: "RIP",
     profession: "Influencer",
     twitter: "pending",
     picture: "fary.jpg",
@@ -24,7 +22,7 @@ export const MOCK_CASPOSOS: Casposo[] = [
   {
     id: 3,
     name: "Julius Churchs",
-    status: true,
+    status: "Alive",
     profession: "Java developer",
     twitter: "@julius_churchs",
     picture: "julio.jpg",

@@ -1,24 +1,23 @@
 import React from "react";
-import { MOCK_VIEJOS } from "../../mocks/mock";
-import { Gentleman } from "../gentelman/gentelman";
+import { MOCK_GENTLEMEN } from "../../mocks/mock_gentlemens";
+import { Gentlemen } from "../Gentlemen/Gentlemen";
 
-export function Info() {
+export function Info(): JSX.Element {
   return (
-    <main className="main">
-      <ul className="gentlemen">
-        {MOCK_VIEJOS.map((item) => (
-          <Gentleman
-            id={item.id}
-            name={item.name}
-            status={item.status}
-            profession={item.profession}
-            twitter={item.twitter}
-            picture={item.picture}
-            alternativeText={item.alternativeText}
-            selected={item.selected}
-          ></Gentleman>
-        ))}
-      </ul>
-    </main>
+    <>
+      {MOCK_GENTLEMEN.map((characters) => (
+        <Gentlemen
+          key={characters.id}
+          picture={characters.picture}
+          name={characters.name}
+          profession={characters.profession}
+          status={characters.status}
+          twitter={characters.twitter}
+          selected={false}
+          alternativeText={characters.alternativeText}
+          initial={characters.name.charAt(0)}
+        ></Gentlemen>
+      ))}
+    </>
   );
 }
